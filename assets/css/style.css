@@ -383,9 +383,7 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 980px) {
-  .main-section {
 
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -402,7 +400,12 @@ input[type=submit] {
   }
 
   #masthead {
+    position: static;
+    margin: 0 0 10px;
+  }
 
+  main {
+    padding-top: 0px;
   }
 
   nav {
@@ -434,4 +437,17 @@ input[type=submit] {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .work {
+    /* Positioning */
+    position: relative;
+    float: none;
+
+    /* Box-model */
+    width: 100%;
+    margin: 20px 0 20px;
+    overflow: auto;
+  }
+
+
 }
